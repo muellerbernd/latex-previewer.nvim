@@ -28,8 +28,6 @@ local function preview()
             vim.fn.jobstart(command)
         else
             print("insert magic comment to this file")
-            print(
-                "% !TEX root = <~/Desktop/GitProjects/MA-Thesis/thesis/NIKR_thesis.tex>")
         end
     end
 end

@@ -18,14 +18,14 @@ set synctex-editor-command "nvr --remote-silent +%{line} %{input}"
 * enable synctex set synctex-editor-command, needed for backward search (zathura to neovim)
 
 ## backward search
-```zsh
-nvr --servername /tmp/nvimsocket NIKR_thesis.tex
-```
+<!-- ```zsh -->
+<!-- nvr --servername /tmp/nvimsocket my_main_file.tex -->
+<!-- ``` -->
 * ctrl + left click in pdf opens source file
 
 ## latex build command
 ```zsh
-latexmk -pdf -interaction=nonstopmode -pvc -quiet -synctex=1 -shell-escape <my-file>.tex
+latexmk -pdf -interaction=nonstopmode -pvc -quiet -synctex=1 -shell-escape <my_main_file>.tex
 ```
 * run latexmk
 * ```-pdf``` output pdf
